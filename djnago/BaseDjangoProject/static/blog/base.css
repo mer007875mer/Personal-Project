@@ -1,0 +1,228 @@
+    /* Body styling */
+    body {
+      background: papayawhip;
+    }
+
+    /* Container styling */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Paragraph styling */
+    p {
+      margin: 0;
+    }
+
+    /* Links styling */
+    a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 10px;
+    }
+
+    a:hover {
+      color: #000;
+    }
+
+    /* Post title styling */
+    h1 {
+      font-size: 2em;
+      margin: 20px 0 10px;
+    }
+
+    h1 a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    h1 a:hover {
+      color: #000;
+    }
+
+    /* Post author info styling */
+    .author-info {
+      margin: 0;
+      color: #777;
+    }
+
+    .avatar {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    /* Post content styling */
+    p + p {
+      margin-top: 10px;
+    }
+
+    /* Post container styling with margin */
+    .post-container {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    /* Pagination styling */
+    .btn {
+      padding: 5px 10px;
+      margin-right: 10px;
+      color: #fff;
+      background-color: #333;
+      border: none;
+      border-radius: 3px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #000;
+    }
+
+    .pagination {
+      display: inline-block;
+      margin: 0;
+    }
+
+    .pagination li {
+      display: inline;
+    }
+
+    .pagination .page-item.active .page-link {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .pagination .page-link {
+      color: #007bff;
+      font-size: 16px;
+    }
+
+    .pagination .page-link:hover {
+      color: #0056b3;
+    }
+
+    .pagination .page-item.disabled .page-link {
+      color: #6c757d;
+    }
+
+    .pagination .page-item:first-child .page-link,
+    .pagination .page-item:last-child .page-link {
+      border-radius: 0;
+    }
+
+    .pagination .page-item:first-child .page-link {
+      border-top-left-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+    }
+
+    .pagination .page-item:last-child .page-link {
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+    }
+
+    .login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+    legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.2em;
+    cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+    background-color: #0056b3;
+    }
+
+    .register-link {
+    margin-top: 20px;
+    text-align: center;
+    }
+
+    .register-link a {
+    color: #007bff;
+    text-decoration: none;
+    }
+
+    .register-link a:hover {
+    text-decoration: underline;
+    }
+
+      .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0062cc;
+  }
+
+  .form-footer {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .form-footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .form-footer a:hover {
+    text-decoration: underline;
+  }

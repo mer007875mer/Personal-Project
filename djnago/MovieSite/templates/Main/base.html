@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Movie Site</title>
+    <style>
+
+body, h1, p {
+    background-color: darkgray;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.movie-item {
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.movie-title {
+    margin-left: 50px;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.movie-info {
+    font-size: 14px;
+    color: whitesmoke;
+    margin-bottom: 3px;
+}
+
+.movie-image {
+    max-width: 100%;
+    height: 414px;
+    width: 287px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.icon {
+    margin: 25px auto 0 25px;
+    color: white;
+}
+
+.seperator {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+p1 {
+    font-size: 16px;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: indianred;
+  padding: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.button:hover {
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: black;
+  color: indianred;
+  padding: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.message {
+    border: 1px solid greenyellow;
+    color: greenyellow;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+    </style>
+
+</head>
+<body>
+
+        <div class="container">
+            <a href="{% url 'HomePage' %}">
+                <h1 class="icon">Movie Site</h1>
+            </a>
+        </div>
+
+        <div class="container" style="text-align: right">
+            <a href="{% url 'register' %}">
+                <small class="icon">Register</small>
+            </a>
+        </div>
+
+        <div class="container" style="text-align: right">
+            <a href="#">
+                <small class="icon">Login</small>
+            </a>
+        </div>
+
+    <hr class="seperator">
+    {% if messages %}
+        {% for message in messages %}
+            <div class="message">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+    {% endif %}
+    {% block content %}{% endblock %}
+</body>
+</html>

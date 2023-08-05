@@ -1,0 +1,24 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <h1>{{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h1>
+    ----------------------------------
+
+    {% for post in posts %}
+        <h1><a href="{% url 'Post_Detail' post.id %}" >{{ post.title }}</a></h1>
+        <p>by <img src="{{ post.author.profile.image.url }}" alt="profile" class="avatar"><a href="#"> {{ post.author }} </a> on {{ post.date|date:"F d, Y" }}</p>
+        <p>{{ post.content }}</p>
+        <p>---------------------------</p>
+    {% endfor %}
+
+    {% if is_paginated %}
+        {% if page_obj.has_previous %}
+            <a href="?page=1" class="btn btn-outline-info mb-4">First</a>
+            <a href="?page={{ page_obj.previous_page_number }}" class="btn btn-outline-info mb-4">Previous</a>
+        {% endif %}
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}" class="btn btn-outline-info mb-4">Next</a>
+        {% endif %}
+    {% endif %}
+
+{% endblock content %}

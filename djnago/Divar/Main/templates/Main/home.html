@@ -1,0 +1,23 @@
+{% extends "Main/base.html" %}
+{% block content %}
+<div class="row">
+    {% for apartment in apartments %}
+    <div class="col">
+        <h1 dir="rtl">{{ apartment.title }}</h1>
+        <div>
+            <img style="align-items: center" src="{{ apartment.image_src }}" alt="{{ apartment.title }}">
+            <div>
+                <p>Price: {{ apartment.price }}</p>
+                <p>Date: {{ apartment.date_year }}/{{ apartment.date_month }}/{{ apartment.date_day }}</p>
+                <a href="{{ apartment.buy_url }}">
+                    <legend class="button">Buy</legend>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    {% if forloop.counter|divisibleby:3 and not forloop.last %}
+    <div style="clear:both;"></div>
+    {% endif %} {% endfor %}
+</div>
+{% endblock %}
