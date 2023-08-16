@@ -6,7 +6,6 @@ from cookie import collectcookie
 chrome_driver_path = '/home/erfan-hooman/Desktop/Personal-Project/Main/pooya/chromedriver'
 service = Service(chrome_driver_path)
 
-
 collectcookie()
 
 # driver = webdriver.Chrome(service=service)
