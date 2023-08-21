@@ -6,4 +6,5 @@
 1. javascript: CodeYad js tutorial
 2. django REST framework:
   - youtube tutorial: https://youtu.be/c708Nf0cHrs?si=8eMtBc0DCYyR6Sep
+  - SerializerMethodFields 
 3. React.js (JavaScript Libary): Learn a popular front-end library to build dynamic user interfaces.
