@@ -9,5 +9,4 @@
   - SerializerMethodFields
   - Custome Permissions
   - APIView inheritance instead of mixin
-  - viewset and routes
 3. React.js (JavaScript Libary): Learn a popular front-end library to build dynamic user interfaces.
