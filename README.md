@@ -8,5 +8,6 @@
   - youtube tutorial: https://youtu.be/c708Nf0cHrs?si=8eMtBc0DCYyR6Sep
   - SerializerMethodFields
   - Custome Permissions
-  - API View inheritance instead of mixin 
+  - APIView inheritance instead of mixin
+  - viewset and routes
 3. React.js (JavaScript Libary): Learn a popular front-end library to build dynamic user interfaces.
