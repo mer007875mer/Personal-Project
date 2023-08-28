@@ -4,3 +4,6 @@ djangorestframework-simplejwt
 pyyaml
 requests
 django-cors-headers
+datetime
+drf-yasg
+django-rest-swagger
