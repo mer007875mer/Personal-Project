@@ -25,5 +25,3 @@ class EntriesResponseSerializer(serializers.Serializer):
     count = serializers.IntegerField()
     page = serializers.IntegerField()
     total_count = serializers.IntegerField()
-
-

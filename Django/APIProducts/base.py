@@ -1,4 +1,3 @@
-from getpass import getpass
 import requests
 
 def get_jwt_tokens():
@@ -6,7 +5,7 @@ def get_jwt_tokens():
 
     data = {
         'username': 'erfan',
-        'password': getpass()
+        'password': 'mer007875mer'
     }
 
     response = requests.post(end_point, data=data)
@@ -19,38 +18,39 @@ def get_jwt_tokens():
 jwt_tokens = get_jwt_tokens()
 
 if jwt_tokens is not None:
+
     def get_products(access_token):
         end_point = "http://localhost:8000/api/"
         headers = {
             "Authorization": f"Bearer {access_token}"
         }
         params = {
+            'page': 1,
+            'count': 5,
             'title': 'new product'
         }
-        response = requests.post(end_point, data=params, headers=headers)
-        print(response.text)
+        response = requests.get(end_point, params=params, headers=headers)
+        print("Response:", response.text)
 
     # Use the access token to retrieve products
-    get_products(jwt_tokens['access'])
+    get_products(jwt_tokens.get('access'))
 
+    def post_products(access_token):
+        end_point = "http://localhost:8000/api/"
 
+        headers = {
+            "Authorization": f"Bearer {access_token}"
+        }
 
-def post(access_token):
-    end_point = "http://localhost:8000/"
+        json_data = {
+            # "title": "Product Title Test 67",
+            "content": "Product Content Test 67",
+            "price": 16.00
+        }
 
-    headers = {
-        "Authorization": f"Bearer {access_token}"
-    }
+        response = requests.post(end_point, headers=headers, data=json_data)
 
-    json_data = {
-        "title": "Product Title Test 3",
-        "content": "Product Content Test 3",
-        "price": 12.10
-    }
+        print(response.text)
 
-    response = requests.post(end_point, headers=headers, data=json_data)
-
-    print(response.text)
-
-
-# post()
+    # Use the access token to Create products
+    # post_products(jwt_tokens.get('access'))

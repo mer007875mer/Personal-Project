@@ -19,7 +19,7 @@ schema_view = get_schema_view(
 
 
 urlpatterns = [
-    path('api/admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('api/', views.ProductAPIView.as_view(), name='api'),
     path('api/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/swagger/', schema_view.with_ui('swagger'))

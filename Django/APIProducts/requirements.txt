@@ -7,3 +7,4 @@ django-cors-headers
 datetime
 drf-yasg
 django-rest-swagger
+django-redis
