@@ -1,5 +1,7 @@
 from rest_framework_simplejwt import authentication as jwt
 from drf_yasg.utils import swagger_auto_schema as swagger
+from django.views.decorators.cache import cache_control
+from django.views.decorators.vary import vary_on_cookie
 from rest_framework.throttling import UserRateThrottle
 from django.views.decorators.cache import cache_page
 from django.utils.decorators import method_decorator
@@ -12,12 +14,13 @@ from rest_framework import status
 from django.db.models import Q
 import logging
 
+from .decorators import set_log_level
 from .models import Product
 from . import serializers as sz
 from . import custom_renderer as cs
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
+logger = logging.getLogger("root")
+
 
 class ProductAPIView(APIView):
 
@@ -33,6 +36,7 @@ class ProductAPIView(APIView):
     @swagger(
         query_serializer=sz.ProductListRequestSerializer,
 
+
         responses={
             status.HTTP_200_OK: sz.EntriesResponseSerializer(),
             status.HTTP_400_BAD_REQUEST: "Bad Request"
@@ -42,11 +46,14 @@ class ProductAPIView(APIView):
         operation_summery="product list",
         tags=["product"]
     )
-    @method_decorator(cache_page(60 * 15))
+    @set_log_level
     def get(self, request):
         pg_serializer = sz.ProductListRequestSerializer(data=request.query_params)
 
-        logger.info("hello from the log")
+        logger.info("hello from info")
+        logger.debug("hello from debug")
+        logger.error("hello from error")
+        logger.warning("hello from war")
 
         if pg_serializer.is_valid():
             page = pg_serializer.validated_data['page']
@@ -99,6 +106,7 @@ class ProductAPIView(APIView):
         operation_summery="create product",
         tags=["product"]
     )
+    @set_log_level
     def post(self, request):
         serializer = sz.ProductSerializer(data=request.data)
 

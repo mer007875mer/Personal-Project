@@ -1,5 +1,4 @@
 from rest_framework.response import Response
-
 from .messages import get_status_message
 
 

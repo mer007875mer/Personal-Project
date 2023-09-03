@@ -10,9 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+from django.core.cache import cache
 from datetime import timedelta
 from pathlib import Path
 import drf_yasg
+import logging
+from django.core.cache import cache
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -146,5 +149,26 @@ SIMPLE_JWT = {
 REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_RATES': {
         'user': '1000/day',
+    },
+}
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "custom": {
+            "format": "[{asctime}] [{levelname}] [{pathname}:{lineno}] [username] {message}",
+            "style": "{",
+        },
+    },
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "formatter": "custom",
+        },
+    },
+    "root": {
+        "handlers": ["console"],
+        "level": "INFO"
     },
 }
