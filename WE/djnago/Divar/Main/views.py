@@ -7,6 +7,7 @@ from datetime import datetime, timedelta
 from jdatetime import datetime, date
 from django.db import IntegrityError
 
+
 class ScrapedApartmentsView(ListView):
     model = Post
     template_name = 'Main/home.html'
@@ -15,6 +16,7 @@ class ScrapedApartmentsView(ListView):
 
     def get_queryset(self):
         return self.model.objects.all()
+
 
 def get_apartment_date(date_string):
     date_parts = date_string.split('،')

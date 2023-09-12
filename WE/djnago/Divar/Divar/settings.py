@@ -139,6 +139,6 @@ CELERY_BROKER_URL = 'redis://localhost:6379/0'
 CELERY_BEAT_SCHEDULE = {
     'scrape-apartments': {
         'task': 'Main.tasks.scrape_apartments',
-        'schedule': timedelta(minutes=15),
+        'schedule': timedelta(minutes=1),
     }
 }

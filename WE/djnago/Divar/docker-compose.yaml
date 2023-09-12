@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:latest
+
+  celeryworker:
+    build: .
+    command: celery -A Divar worker --loglevel=info
+    depends_on:
+      - redis
+
+  celerybeat:
+    build: .
+    command: celery -A Divar beat --loglevel=info
+    depends_on:
+      - redis
+      - celeryworker

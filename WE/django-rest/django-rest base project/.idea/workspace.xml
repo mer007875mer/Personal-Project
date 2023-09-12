@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41df6b90-1f7f-4763-b917-2a8126e5d224" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../djnago/Divar/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../djnago/Divar/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../djnago/Divar/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../djnago/Divar/dump.rdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../djnago/Divar/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djnago/Divar/.idea/Divar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../djnago/Divar/.idea/Divar.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djnago/Divar/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../djnago/Divar/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djnago/Divar/Divar/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../djnago/Divar/Divar/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djnago/Divar/Main/templates/Main/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../djnago/Divar/Main/templates/Main/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djnago/Divar/Main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../djnago/Divar/Main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djnago/Divar/celerybeat-schedule" beforeDir="false" afterPath="$PROJECT_DIR$/../../djnago/Divar/celerybeat-schedule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djnago/Divar/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../../djnago/Divar/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djnago/Divar/my_celery.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../djnago/Divar/my_celery.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2UKQMUTdEknFbhb512hDtFCgV0p" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/erfan/Desktop/Personal-Project/WE/django-rest/django-rest base project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="django-rest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Run Backend" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="$USER_HOME$/Templates/django-rest/bin/python $PROJECT_DIR$/backend/manage.py runserver 8000" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$USER_HOME$/Templates/django-rest/bin/python $PROJECT_DIR$/backend/manage.py runserver 8000" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41df6b90-1f7f-4763-b917-2a8126e5d224" name="Changes" comment="" />
+      <created>1692685743987</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692685743987</updated>
+      <workItem from="1692685745023" duration="56000" />
+      <workItem from="1692685807485" duration="23000" />
+      <workItem from="1692685831785" duration="3384000" />
+      <workItem from="1692691221307" duration="17658000" />
+      <workItem from="1692770201606" duration="12201000" />
+      <workItem from="1692856286919" duration="19116000" />
+      <workItem from="1692879778895" duration="611000" />
+      <workItem from="1692881094855" duration="1288000" />
+      <workItem from="1693508509112" duration="26000" />
+      <workItem from="1693671069438" duration="600000" />
+      <workItem from="1694377573947" duration="65000" />
+      <workItem from="1694508449912" duration="19000" />
+      <workItem from="1694524535604" duration="10000" />
+      <workItem from="1694524546017" duration="5000" />
+    </task>
+    <task id="LOCAL-00001" summary="Tutorial file for REST-API">
+      <option name="closed" value="true" />
+      <created>1692712180187</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692712180187</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Tutorial file for REST-API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tutorial file for REST-API" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/django_rest$basic.coverage" NAME="basic Coverage Results" MODIFIED="1692699373512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/py_client" />
+    <SUITE FILE_PATH="coverage/django_rest$views.coverage" NAME="views Coverage Results" MODIFIED="1692695907827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/api" />
+  </component>
+</project>
