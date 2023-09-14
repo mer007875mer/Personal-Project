@@ -5,19 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41df6b90-1f7f-4763-b917-2a8126e5d224" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../djnago/Divar/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../djnago/Divar/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../djnago/Divar/dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../djnago/Divar/dump.rdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../djnago/Divar/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djnago/Divar/.idea/Divar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../djnago/Divar/.idea/Divar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djnago/Divar/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../djnago/Divar/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djnago/Divar/Divar/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../djnago/Divar/Divar/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djnago/Divar/Main/templates/Main/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../djnago/Divar/Main/templates/Main/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djnago/Divar/Main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../djnago/Divar/Main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djnago/Divar/celerybeat-schedule" beforeDir="false" afterPath="$PROJECT_DIR$/../../djnago/Divar/celerybeat-schedule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djnago/Divar/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../../djnago/Divar/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djnago/Divar/my_celery.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../djnago/Divar/my_celery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Django/APIProducts/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Django/APIProducts/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Django/APIProducts/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Django/APIProducts/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Django/APIProducts/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Django/APIProducts/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,24 +46,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/erfan/Desktop/Personal-Project/WE/django-rest/django-rest base project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/erfan/Desktop/Personal-Project/WE/djnago/APIProducts",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="django-rest" />
@@ -127,6 +125,10 @@
       <workItem from="1694508449912" duration="19000" />
       <workItem from="1694524535604" duration="10000" />
       <workItem from="1694524546017" duration="5000" />
+      <workItem from="1694524663123" duration="7000" />
+      <workItem from="1694524671287" duration="4000" />
+      <workItem from="1694590863473" duration="54000" />
+      <workItem from="1694593054804" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="Tutorial file for REST-API">
       <option name="closed" value="true" />

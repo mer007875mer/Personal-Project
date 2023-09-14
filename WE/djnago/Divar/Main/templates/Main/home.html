@@ -2,18 +2,19 @@
 {% block content %}
 <div class="row">
     {% for apartment in apartments %}
-    <div class="col">
-        <h1 dir="rtl">{{ apartment.title }}</h1>
-        <div>
-            <img style="align-items: center" src="{{ apartment.image_src }}" alt="{{ apartment.title }}">
-            <div>
-                <p>Price: {{ apartment.price }}</p>
-                <p>imag: {{ apartment.image_src }}</p>
-                <p>Date: {{ apartment.date_year }}/{{ apartment.date_month }}/{{ apartment.date_day }}</p>
-                <a href="{{ apartment.buy_url }}">
-                    <legend class="button">Buy</legend>
-                </a>
+    <div class="col" dir="rtl">
+        <div class="col-detail">
+            <div class="col-detail-content">
+                <div class="col-detail-info">
+                    <p class="col-detail-title">{{ apartment.title }}</p>
+                    <p>Price: {{ apartment.price }}</p>
+                    <p>Date: {{ apartment.date_year }}/{{ apartment.date_month }}/{{ apartment.date_day }}</p>
+                </div>
+                <div class="col-detail-image">
+                    <img class="centered-image" src="{{ apartment.image_src }}">
+                </div>
             </div>
+            <button class="col-button">Buy</button>
         </div>
     </div>
 

@@ -1,0 +1,2 @@
+selector : specify calculator (to find out which css selector apply first)
+Colors palet : https://coolors.co/ ,, colors contrast checker and pallet
