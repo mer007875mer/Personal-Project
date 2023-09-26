@@ -1,0 +1,13 @@
+.error-message {
+  max-width: 1000px;
+  margin: 0px auto 50px auto;
+  background-color: #ffcccc;
+  color: #ff0000;
+  padding: 10px;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+}
+
+.error-message p {
+  margin: 0;
+}

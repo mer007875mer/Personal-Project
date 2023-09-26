@@ -1,0 +1,23 @@
+{% load pagination_tag %}
+
+<div class="pagination">
+{#     show the first page#}
+    {% if page > 1 %}
+        <a href="?{% url_replace page=1 %}">first page</a>
+    {% endif %}
+
+{# show three page before current page #}
+    {% for i in page|custom_range:"-3,0" %}
+        {% if i >= 1 %}
+            <a class="{% if i == page %}active{% endif %}" href="?{% url_replace page=i %}">{{ i }}</a>
+        {% endif %}
+    {% endfor %}
+
+{# show three page after current page #}
+    {% for i in page|custom_range:"1,4" %}
+        {% if i <= total_pages %}
+            <a class="{% if i == page %}active{% endif %}" href="?{% url_replace page=i %}">{{ i }}</a>
+        {% endif %}
+    {% endfor %}
+
+</div>

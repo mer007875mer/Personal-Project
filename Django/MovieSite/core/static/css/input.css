@@ -1,0 +1,62 @@
+.input-class {
+ padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ margin: 15px 25px 15px 0px;
+}
+
+.input-class:hover {
+ color: #6c757d;
+}
+
+.input-class:hover::before {
+ width: 100%;
+}
+
+.small-input {
+    width: 75px;
+}
+
+.large-input {
+    width: 250px;
+}
+
+/* CheckBox */
+
+/* Style for the custom checkbox */
+.custom-checkbox {
+    position: relative;
+    appearance: none; /* Remove the default checkbox style */
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin: 15px 25px 15px 0; /* Adjust margin as needed */
+    background: #e8e8e8;
+    border-radius: 15px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    cursor: pointer;
+}
+
+/* Style for the checkbox label */
+.custom-checkbox + label {
+    position: relative;
+    padding-left: 30px; /* Adjust padding to position label next to the checkbox */
+    font-size: 17px;
+    color: #212121;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Style for checkbox when checked */
+.custom-checkbox:checked {
+    background: #007BFF; /* Change the background color when checked */
+    color: white;
+}

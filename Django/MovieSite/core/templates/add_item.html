@@ -1,0 +1,79 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+<body>
+    <div class="head-container">
+        <h1>Add Movie</h1>
+            <form method="post" style="display: flex">
+                {% csrf_token %}
+
+                <div class="form-group">
+                    <label for="{{ form.title.id_for_label }}">Title:</label>
+                    <input type="text" id="id_title" name="title" maxlength="80" placeholder="Title" value="{{ title }}" autocomplete="off" class="input-class">
+                </div>
+
+                <div class="form-group">
+                    <label for="{{ form.overview.id_for_label }}">Overview:</label>
+                    <textarea id="id_overview" name="overview" maxlength="800" placeholder="Overview" autocomplete="off" class="input-class large-input" rows="5">{{ overview }}</textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+    </div>
+    <h1>id : {{ id }}</h1>
+    <h1>imdb_id : {{ imdb_id }}</h1>
+
+    <h1>title : {{ title }}</h1>
+    <h1>original_title : {{ original_title }}</h1>
+    <h1>overview : {{ overview }}</h1>
+    <h1>release_date : {{ release_date }}</h1>
+    <h1>adult : {{ adult }}</h1>
+    <h1>backdrop path : {{ backdrop_path }}</h1>
+    <h1>poster_path : {{ poster_path }}</h1>
+    <h1>poster_path : {{ poster_path }}</h1>
+    <h1>language : {{ language }}</h1>
+    <h1>runtime : {{ runtime }} min</h1>
+    <h1>status : {{ status }}</h1>
+    <h1>countries : {% for countries in countries %}
+        countries name : {{ countries.name }} -- {{ countries.iso_3166_1 }}
+    {% endfor %}</h1>
+    <h1>genre : {% for genre in genres %}
+        {{ genre.name }}
+    {% endfor %}</h1>
+
+    <hr>
+
+    <h1>director: {% for cast in crew %}
+        {% if cast.job == 'Director'%}
+            name:{{ cast.name }} | profile:{{ cast.profile_path }} | gender:{{ cast.gender }}
+            id:{{ cast.id }} | job : {{ cast.job }} <hr>
+        {% endif %}
+    {% endfor %}
+
+    </h1>
+
+    <h1>producer: {% for cast in crew %}
+        {% if cast.job == 'Producer'%}
+            name:{{ cast.name }} | profile:{{ cast.profile_path }} | gender:{{ cast.gender }}
+            id:{{ cast.id }} | job : {{ cast.job }} <hr>
+        {% endif %}
+    {% endfor %}
+    </h1>
+
+    <h1>Writer: {% for cast in crew %}
+        {% if cast.job == 'Writer'%}
+            name:{{ cast.name }} | profile:{{ cast.profile_path }} | gender:{{ cast.gender }}
+            id:{{ cast.id }} | job : {{ cast.job }} <hr>
+        {% endif %}
+    {% endfor %}
+    </h1>
+
+
+    <h1>cast:
+    {% for cast in casts %}
+            name:{{ cast.name }} | profile:{{ cast.profile_path }} | gender:{{ cast.gender }}
+            id:{{ cast.id }} | job : actor
+        <hr>
+    {% endfor %}</h1>
+</body>
+{% endblock %}

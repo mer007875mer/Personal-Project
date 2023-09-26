@@ -1,0 +1,80 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+<body>
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    <div class="head-container">
+        <form method="get" class="main-add-form">
+            {% csrf_token %}
+            <div class="add-form">
+                <div style="margin-left: 30px">
+                    <h1>Add Movie</h1>
+                </div>
+                <div>
+                    <a class="link" href="{% url 'search_series_list' %}">Add Series</a>
+                </div>
+            </div>
+            <div class="add-form">
+                    <div>
+                    <input type="text" id="id_name" name="name" maxlength="80" placeholder="Name" value="{{ name }}" autocomplete="off" class="input-class large-input">
+                </div>
+
+                <div>
+                    <input type="number" id="id_release_year" name="release_year" min="1500" max="2050" placeholder="Year" value="{{ release_year }}" autocomplete="off" class="input-class small-input">
+                </div>
+                <div>
+                    <button type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    {% if messages %}
+        <div class="error-message">
+            <p>{{ messages }}</p>
+        </div>
+    {% endif %}
+    {% for movie in result %}
+        <div class="container">
+            <div class="left-div">
+                <div>
+                    <p class="movie_title">{{ movie.title }} <span class="movie-info">{{ movie.release_date }}</span> </p>
+                    <p class="movie-info">
+                        {% for genre in genres %}
+                            {{ genre }} ,
+                        {% endfor %}
+                    </p>
+                    <p class="movie-info">{{ movie.overview }}</p>
+                </div>
+                <div class="button-container">
+                    <a href="{% url 'add_movie_list' movie.id %}">
+                        <button class="download-button">Add to Download List : {{ movie.id }}</button>
+                    </a>
+                </div>
+            </div>
+            <div class="right-div">
+{#               src="https://image.tmdb.org/t/p/w200{{ movie.poster_path }}"#}
+                <img
+                    {% if movie.poster_path == None %}
+                        src="{% static 'img/not-available.jpeg' %}"
+                    {% else %}
+                        src="https://www.themoviedb.org/t/p/w220_and_h330_face{{ movie.poster_path }}"
+{#                        src="#"#}
+                    {% endif %}
+                    title="{{ movie.original_title }}"
+                    class="right-div-item"
+                    height=300 width="200">
+            </div>
+        </div>
+    {% endfor %}
+    <div>
+        {% include 'pagination.html' %}
+    </div>
+
+</body>
+{% endblock %}

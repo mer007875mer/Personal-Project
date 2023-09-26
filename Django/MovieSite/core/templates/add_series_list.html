@@ -1,0 +1,72 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+<body>
+    <div class="head-container">
+        <form method="get" class="main-add-form">
+            {% csrf_token %}
+            <div class="add-form">
+                <div style="margin-left: 30px">
+                    <h1>Add Series</h1>
+                </div>
+                <div>
+                    <a class="link" href="{% url 'search_movie_list' %}">Add Movie</a>
+                </div>
+            </div>
+            <div class="add-form">
+                    <div>
+                    <input type="text" id="id_name" name="name" maxlength="80" placeholder="Name" value="{{ name }}" autocomplete="off" class="input-class large-input">
+                </div>
+
+                <div>
+                    <input type="number" id="id_release_year" name="release_year" min="1500" max="2050" placeholder="Year" value="{{ release_year }}" autocomplete="off" class="input-class small-input">
+                </div>
+                <div>
+                    <button type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    {% if messages %}
+        <div class="error-message">
+            <p>{{ messages }}</p>
+        </div>
+    {% endif %}
+    {% for movie in result %}
+        <div class="container">
+            <div class="left-div">
+                <div>
+                    <p class="movie_title">{{ movie.original_name }} <span class="movie-info">{{ movie.first_air_date }}</span> </p>
+                    <p class="movie-info">
+                        {% for genre in genres %}
+                            {{ genre }} ,
+                        {% endfor %}
+                    </p>
+                    <p class="movie-info">{{ movie.overview }}</p>
+                </div>
+                <div class="button-container">
+                    <a href="#">
+                        <button class="download-button">Add to Download List</button>
+                    </a>
+                </div>
+            </div>
+            <div class="right-div">
+                <img
+                    {% if movie.poster_path == None %}
+                        src="{% static 'img/icon-image-not-found-free-vector.jpg' %}"
+                    {% else %}
+                        src="https://image.tmdb.org/t/p/w200{{ movie.poster_path }}"
+{#                        src="#"#}
+                    {% endif %}
+                    title="{{ movie.original_name }}"
+                    class="right-div-item"
+                    height=300 width="200">
+            </div>
+        </div>
+    {% endfor %}
+    <div>
+        {% include 'pagination.html' %}
+    </div>
+
+</body>
+{% endblock %}
